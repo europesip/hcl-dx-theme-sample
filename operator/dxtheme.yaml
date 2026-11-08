@@ -1,6 +1,6 @@
 # The EUROPESIP sample theme in HCL DX with the HCL DX Script Application operator
-# (https://github.com/europesip/hcl-dx-scriptapp-operator, 0.3.0 or later). The operator downloads the release
-# archive of this repository, uploads the theme/ folder to the WebDAV store of DX and registers the theme.
+# (https://github.com/europesip/hcl-dx-scriptapp-operator, 0.3.0 or later). The operator downloads the theme archive of
+# the release (checked with its SHA256), uploads it to the WebDAV store of DX and registers the theme.
 apiVersion: dx.europesip.com/v1alpha1
 kind: DXTheme
 metadata:
@@ -13,8 +13,8 @@ spec:
   base: { copyFiles: false }                  # a complete theme of its own: nothing is copied from another theme
   source:
     url:
-      url: https://github.com/europesip/hcl-dx-theme-sample/archive/refs/tags/v1.0.0.tar.gz
-      path: hcl-dx-theme-sample-1.0.0/theme
+      url: https://github.com/europesip/hcl-dx-theme-sample/releases/download/v1.0.0/europesip-theme-1.0.0.tar.gz
+      sha256: bcb2aaec16f7b7ded4562049d75e2969957c3de4d0262ef9a2ba47459d9ed0c9
   profile: profiles/profile_europesip.json
   layout: layout-templates/1Column
 ---

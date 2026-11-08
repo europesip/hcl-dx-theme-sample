@@ -49,8 +49,8 @@ spec:
   base: { copyFiles: false }        # un tema propio: no se copia nada de otro tema
   source:
     url:
-      url: https://github.com/europesip/hcl-dx-theme-sample/archive/refs/tags/v1.0.0.tar.gz
-      path: hcl-dx-theme-sample-1.0.0/theme
+      url: https://github.com/europesip/hcl-dx-theme-sample/releases/download/v1.0.0/europesip-theme-1.0.0.tar.gz
+      sha256: bcb2aaec16f7b7ded4562049d75e2969957c3de4d0262ef9a2ba47459d9ed0c9
   profile: profiles/profile_europesip.json
   layout: layout-templates/1Column
 ```
