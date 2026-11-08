@@ -1,0 +1,43 @@
+{
+  "moduleIDs": [
+    "europesip_theme",
+    "wp_dynamicContentSpots_85",
+    "wp_toolbar_host_view",
+    "wp_portlet_css",
+    "wp_status_bar",
+    "wp_layout_windowstates",
+    "wp_portal",
+    "wp_analytics_aggregator",
+    "wp_ic4_wai_resources",
+    "wp_gridlayout"
+  ],
+  "deferredModuleIDs": [
+    "wp_toolbar_host_edit",
+    "wcm_inplaceEdit",
+    "wp_skin_cam",
+    "wp_toolbar_gridlayout_inlineedit",
+    "wp_contextmenu_live_object",
+    "wp_analytics_tags",
+    "wp_content_targeting_cam"
+  ],
+  "titles": [
+    {
+      "value": "EUROPESIP",
+      "lang": "en"
+    },
+    {
+      "value": "EUROPESIP",
+      "lang": "es"
+    }
+  ],
+  "descriptions": [
+    {
+      "value": "Modules of the EUROPESIP sample theme",
+      "lang": "en"
+    },
+    {
+      "value": "Módulos del tema de ejemplo de EUROPESIP",
+      "lang": "es"
+    }
+  ]
+}

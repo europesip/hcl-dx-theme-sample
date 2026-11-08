@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- EUROPESIP sample theme for HCL DX (MIT). Elements with rel="dynamic-content" are filled by DX: "co:" are the
+     contributions of the theme modules (profiles/profile_europesip.json), "dyn-cs:" the dynamic content spots of DX. -->
+<link rel="dynamic-content" href="co:head">
+<link rel="dynamic-content" href="dyn-cs:id:85theme_head">
+</head>
+<body id="content" class="esip locale_en">
+<div class="wpthemeFrame esipFrame">
+	<header class="esipHeader" role="banner" aria-label="Main header">
+		<!-- the DX toolbar (edit mode, site manager...) for authors and administrators -->
+		<a rel="dynamic-content" href="dyn-cs:id:85theme_toolbar"></a>
+		<div class="esipBar">
+			<div class="wpthemeInner esipBarInner">
+				<a class="esipBrand" href="?uri=nm:oid:ibm.portal.Home" aria-label="Home">
+					<span class="esipLogo"></span><span class="esipProduct">Portal</span>
+				</a>
+				<div class="esipActions">
+					<!-- user name, log in / log out and help -->
+					<a rel="dynamic-content" href="dyn-cs:id:85theme_commonActions"></a>
+				</div>
+			</div>
+		</div>
+		<nav class="esipNav" aria-label="Main navigation">
+			<div class="wpthemeInner">
+				<a rel="dynamic-content" href="dyn-cs:id:85theme_primaryNav"></a>
+				<div class="wpthemeClear"></div>
+			</div>
+		</nav>
+		<div class="esipSubNav">
+			<div class="wpthemeInner">
+				<a rel="dynamic-content" href="dyn-cs:id:85theme_secondaryNav"></a>
+				<div class="wpthemeClear"></div>
+			</div>
+		</div>
+	</header>
+
+	<main class="wpthemeMainContent esipMain" role="main" tabindex="-1" aria-label="Main content">
+		<div class="wpthemeInner">
+			<a rel="dynamic-content" href="dyn-cs:id:wp_analytics_dynspot"></a>
+			<a rel="dynamic-content" href="dyn-cs:id:85theme_crumbTrail"></a>
+			<a rel="dynamic-content" href="dyn-cs:id:85theme_status"></a>
+		</div>
+		<!-- required by DX: window states and portlet modes -->
+		<a rel="dynamic-content" href="state.portlet:portlet?include=windowState&include=portletMode&mime-type=text/html"></a>
+		<div id="layoutContainers" class="wpthemeLayoutContainers">
+			<div class="wpthemeInner">
+				<!-- the layout of the page (layout-templates/) with its applications -->
+				<a rel="dynamic-content" href="dyn-cs:id:85theme_layout"></a>
+				<div class="wpthemeClear"></div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="esipFooter" role="contentinfo">
+		<div class="wpthemeInner esipFooterInner">
+			<div class="esipFooterBrand">
+				<span class="esipLogo"></span>
+				<p>Sample theme for HCL DX, by EUROPESIP.</p>
+			</div>
+			<ul class="esipFooterLinks">
+				<li><a href="https://github.com/europesip/hcl-dx-theme-sample" target="_blank" rel="noopener">Source code of the theme</a></li>
+				<li><a href="https://www.europesip.com" target="_blank" rel="noopener">www.europesip.com</a></li>
+			</ul>
+			<p class="esipLegal">Sample theme · MIT licence · HCL and HCL DX are trademarks of HCL Technologies. EUROPESIP is not affiliated with HCL.</p>
+		</div>
+	</footer>
+</div>
+<!-- required by DX: the configuration of its JavaScript framework, at the end to load faster -->
+<div class="wpthemeComplementaryContent" id="wpthemeComplementaryContent" role="region" aria-label="Complementary content">
+	<a rel="dynamic-content" href="co:config"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* EUROPESIP sample theme for HCL DX - MIT licence - https://github.com/europesip/hcl-dx-theme-sample
+   Corporate colours: navy #0B1B3A, blue #0040FF, pink #FF0A6C. The logos are embedded (data URIs) by tools/build.py,
+   so the stylesheet works whatever the folder name of the theme is. */
+:root {
+  --esip-navy: #0B1B3A;
+  --esip-blue: #0040FF;
+  --esip-pink: #FF0A6C;
+  --esip-bg: #F4F6FC;
+  --esip-line: #DDE3F3;
+  --esip-ink: #0B1B3A;
+  --esip-muted: #4A5470;
+  --esip-radius: 14px;
+  --esip-font: "Inter", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+}
+
+/* ---- Base ---- */
+html, body.esip { margin: 0; padding: 0; }
+body.esip { background: var(--esip-bg); color: var(--esip-ink); font-family: var(--esip-font); font-size: 15px; line-height: 1.5; }
+body.esip a { color: var(--esip-blue); }
+.esipFrame { min-height: 100vh; display: flex; flex-direction: column; }
+.esipMain { flex: 1; padding: 28px 0 48px; }
+.wpthemeInner { max-width: 1240px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; }
+
+/* Accessibility and helper classes used by the markup of DX */
+.wpthemeAltText, .wpthemeAccess, .wpthemeDisplayNone, .esip .wpthemeComplementaryContent > span {
+  position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.wpthemeClear { clear: both; }
+.wpthemeLeft { float: left; }
+.wpthemeRight { float: right; }
+.wpthemeOverflowAuto { overflow: auto; }
+
+/* ---- Header ---- */
+.esipBar { background: linear-gradient(90deg, var(--esip-navy) 0%, #0A2A8A 60%, var(--esip-blue) 100%); color: #fff; }
+.esipBarInner { display: flex; align-items: center; justify-content: space-between; min-height: 72px; gap: 24px; }
+.esipBrand { display: flex; align-items: center; gap: 16px; text-decoration: none; color: #fff !important; }
+.esipLogo { display: inline-block; width: 176px; height: 26px; background: url("@@LOGO_WHITE@@") no-repeat left center / contain; }
+.esipProduct { padding-left: 16px; border-left: 1px solid rgba(255,255,255,.35); font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #C9D3F5; }
+
+/* user name, log out, help (85theme_commonActions); the DX branding and the actions menu are not used */
+.esipActions .wpthemeCommonActions { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 6px; float: none; }
+.esipActions .wpthemeCommonActions.wpthemeLeft, .esip #wpthemeActionsMenu, .esip .wpthemeBranding { display: none; }
+.esipActions .wpthemeCommonActions li a { display: inline-block; padding: 7px 14px; border-radius: 999px; color: #fff; text-decoration: none; font-size: 14px; }
+.esipActions .wpthemeCommonActions li a:hover { background: rgba(255,255,255,.14); }
+.esipActions #wpthemeLogout a { border: 1px solid rgba(255,255,255,.45); }
+.esipActions #wpthemeHelp img { width: 18px; height: 18px; filter: brightness(0) invert(1); vertical-align: middle; }
+.esipActions .wpthemeCommonActions .wpthemeFirst a::before { content: ""; display: inline-block; width: 8px; height: 8px; margin-right: 8px; border-radius: 50%; background: var(--esip-pink); }
+
+/* ---- Navigation (85theme_primaryNav / 85theme_secondaryNav) ---- */
+.esipNav { background: #fff; border-bottom: 1px solid var(--esip-line); box-shadow: 0 6px 20px rgba(11,27,58,.05); }
+.esipNav .wpthemeNavContainer1, .esipNav .wpthemePrimaryNav { float: none; }
+.esip .wpthemeNavList { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px; }
+.esip .wpthemeNavListItem { float: none; }
+.esip .wpthemeNavListItem > a { float: none; display: block; padding: 14px 13px 11px; color: var(--esip-muted); text-decoration: none; font-weight: 600; font-size: 14.5px; border-bottom: 3px solid transparent; }
+.esip .wpthemeNavListItem > a:hover { color: var(--esip-blue); }
+.esip .wpthemeNavListItem.wpthemeSelected > a { color: var(--esip-navy); border-bottom-color: var(--esip-pink); }
+.esipSubNav { background: var(--esip-bg); }
+.esipSubNav .wpthemeNavListItem > a { padding: 10px 14px; font-size: 13.5px; }
+.esipSubNav .wpthemeNavListItem.wpthemeSelected > a { border-bottom-color: var(--esip-blue); }
+
+/* crumb trail and status messages */
+.esip .wpthemeCrumbTrail { font-size: 13px; color: var(--esip-muted); margin-bottom: 16px; }
+.esip .wpthemeMessage { margin: 0 0 18px; padding: 14px 18px; border-radius: var(--esip-radius); background: #fff; border: 1px solid var(--esip-line); border-left: 5px solid var(--esip-blue); }
+.esip .wpthemeMessage.wpthemeError, .esip .wpthemeMsgIconError + * { border-left-color: var(--esip-pink); }
+
+/* ---- Layouts (layout-templates/) ---- */
+.esip .hiddenWidgetsDiv { display: none; }
+.esip .wptheme1Col, .esip .wptheme2Col, .esip .wptheme3Col { display: flex; flex-wrap: wrap; gap: 24px; }
+.esip .wpthemeCol { float: none; box-sizing: border-box; min-width: 0; }
+.esip .wpthemeRow { box-sizing: border-box; }
+.esip .wpthemeCol12of12, .esip .wpthemeFull { flex: 0 0 100%; width: 100%; }
+.esip .wpthemeCol8of12 { flex: 1 1 calc(66.666% - 12px); }
+.esip .wpthemeCol6of12 { flex: 1 1 calc(50% - 12px); }
+.esip .wpthemeCol4of12 { flex: 1 1 calc(33.333% - 16px); }
+.esip .component-control { margin-bottom: 24px; }
+@media (max-width: 860px) {
+  .esip .wpthemeCol8of12, .esip .wpthemeCol6of12, .esip .wpthemeCol4of12 { flex-basis: 100%; }
+  .esipProduct { display: none; }
+}
+
+/* ---- Portlet / application skins (the skins of DX: Standard, NoSkin...) ---- */
+.esip .wpthemeControl.wpthemeStandard { background: #fff; border: 1px solid var(--esip-line); border-radius: var(--esip-radius); box-shadow: 0 10px 30px rgba(11,27,58,.06); overflow: hidden; }
+.esip .wpthemeControlHeader { padding: 14px 20px; border-bottom: 1px solid var(--esip-line); }
+.esip .wpthemeControlHeader h2 { margin: 0; font-size: 16px; font-weight: 700; color: var(--esip-navy); }
+.esip .wpthemeControlBody { padding: 20px; }
+/* menus of the skins need the theme menus module of DX, not used by this sample theme */
+.esip .wpthemeMenu, .esip .contextMenuInSkinIcon, .esip .wpthemeMenuDropDown, .esip .wpthemeMenuBorder { display: none; }
+
+/* ---- Footer ---- */
+.esipFooter { background: var(--esip-navy); color: #C9D3F5; padding: 36px 0; font-size: 14px; }
+.esipFooterInner { display: grid; grid-template-columns: 1fr auto; gap: 18px 32px; align-items: center; }
+.esipFooterBrand { display: flex; align-items: center; gap: 20px; }
+.esipFooterBrand p { margin: 0; }
+.esipFooterLinks { list-style: none; margin: 0; padding: 0; display: flex; gap: 22px; }
+.esipFooterLinks a { color: #fff !important; text-decoration: none; border-bottom: 2px solid var(--esip-pink); padding-bottom: 2px; }
+.esipLegal { grid-column: 1 / -1; margin: 0; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.12); font-size: 12.5px; color: #8E9AC2; }
+@media (max-width: 860px) { .esipFooterInner { grid-template-columns: 1fr; } }

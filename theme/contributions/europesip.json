@@ -1,0 +1,36 @@
+{
+  "modules": [
+    {
+      "id": "europesip_theme",
+      "prereqs": [
+        {
+          "id": "wp_client_main"
+        },
+        {
+          "id": "wp_client_ext"
+        },
+        {
+          "id": "wp_custom_page_style"
+        },
+        {
+          "id": "wp_high_contrast"
+        }
+      ],
+      "contributions": [
+        {
+          "type": "head",
+          "sub-contributions": [
+            {
+              "type": "css",
+              "uris": [
+                {
+                  "value": "/css/europesip.css"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
