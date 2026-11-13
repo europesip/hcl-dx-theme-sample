@@ -1,5 +1,10 @@
 # Release history
 
+## Unreleased
+
+- `catalog-info.yaml` (commented) so that the EUROPESIP developer portal (Backstage) shows the theme in its catalog (#1).
+  Metadata only: it is not part of the theme nor of the release archive.
+
 ## 1.0.0 · 2026-11-08
 
 - First release: page template (English and Spanish), stylesheet with the EUROPESIP colours and logo, theme module,
