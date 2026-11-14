@@ -1,5 +1,10 @@
 # Release history
 
+## Unreleased
+
+- TechDocs for Backstage (#3): `mkdocs.yml` and a docs home page (`docs/index.md`, `docs/index.es.md`), so the
+  EUROPESIP Internal Developer Portal shows the documentation of the theme. No change to the theme.
+
 ## 1.0.0 · 2026-11-08
 
 - First release: page template (English and Spanish), stylesheet with the EUROPESIP colours and logo, theme module,
