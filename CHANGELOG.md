@@ -4,6 +4,8 @@
 
 - `catalog-info.yaml` (commented) so that the EUROPESIP developer portal (Backstage) shows the theme in its catalog (#1).
   Metadata only: it is not part of the theme nor of the release archive.
+- TechDocs for Backstage (#3): `mkdocs.yml` and a docs home page (`docs/index.md`, `docs/index.es.md`), so the
+  EUROPESIP Internal Developer Portal shows the documentation of the theme. No change to the theme.
 
 ## 1.0.0 · 2026-11-08
 
