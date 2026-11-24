@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 EUROPESIP
 """Builds the theme folder (theme/) from src/: the templates of every language and the stylesheet with the logos
 embedded. Run it after changing src/ and commit the result: theme/ is what is uploaded to DX.
 

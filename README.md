@@ -91,3 +91,5 @@ with DX on its own login and behind OpenID Connect (Keycloak…). Tested with HC
 ## Licence
 
 [MIT](LICENSE) · © 2026 EUROPESIP · [www.europesip.com](https://www.europesip.com)
+
+**Attribution:** any copy or redistribution of this code, modified or not (also when it is reworked with AI tools), must keep the copyright notice (`Copyright (c) 2026 EUROPESIP`) and the MIT licence text.

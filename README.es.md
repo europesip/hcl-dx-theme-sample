@@ -92,3 +92,5 @@ con el login propio de DX y detrás de OpenID Connect (Keycloak…). Probado con
 ## Licencia
 
 [MIT](LICENSE) · © 2026 EUROPESIP · [www.europesip.com](https://www.europesip.com)
+
+**Atribución:** cualquier copia o redistribución de este código, modificado o no (también si se rehace con herramientas de IA), debe mantener el aviso de copyright (`Copyright (c) 2026 EUROPESIP`) y el texto de la licencia MIT.
